@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ThemesFragment">
+
+    <Button
+        android:id="@+id/btnBasic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSOLID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLID"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSDK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SDK"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnRetrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrofit"
+        android:textAllCaps="false" />
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ThemesFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollViewAnswer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Some text"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="400dp" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollViewQuestions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="32dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnOOPPrinciples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Основные принципы ООП"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnWhatIsEncapsulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Что такое инкапсуляция?"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnWhatIsInheritance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Что такое наследование?"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnWhatIsPolymorphism"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Что такое полиморфизм?"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnWhatIsClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Что такое класс?"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnWhatIsConstructor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Что такое конструктор?"
+                android:textAllCaps="false" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
